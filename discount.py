@@ -26,7 +26,7 @@ def main():
     prices = []
     isPet = []
     sconto = 0.0
-    with open("lista.txt", "r") as file:
+    with open("lista_con_sconto.txt", "r") as file:
         lines = file.readlines()
         for line in lines:
             parts = line.split()
@@ -42,4 +42,5 @@ def main():
         print("sconto totale", sconto)
 
 if __name__ == "__main__":
+
     main()
